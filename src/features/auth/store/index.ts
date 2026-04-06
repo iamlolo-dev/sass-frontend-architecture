@@ -2,7 +2,7 @@
 
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { AuthStore, User } from '../types';
+import type { AuthStore, User } from '../login/types';
 
 const initialState = {
   user: null,
