@@ -1,0 +1,134 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "backToHome": "Back to home",
+    "next": "Next",
+    "submit": "Submit",
+    "or": "or"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Enter your credentials to access your account",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "success": "Successfully logged in",
+      "error": "Invalid email or password"
+    },
+    "register": {
+      "title": "Create an account",
+      "subtitle": "Enter your details to get started",
+      "name": "Full name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Create a password",
+      "confirmPassword": "Confirm password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "terms": "I agree to the Terms of Service and Privacy Policy",
+      "submit": "Create account",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "success": "Account created successfully",
+      "error": "Failed to create account"
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "subtitle": "Enter your email and we'll send you a reset link",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "submit": "Send reset link",
+      "backToLogin": "Back to login",
+      "success": "Reset link sent to your email",
+      "error": "Email not found"
+    },
+    "resetPassword": {
+      "title": "Reset your password",
+      "subtitle": "Enter your new password below",
+      "password": "New password",
+      "passwordPlaceholder": "Enter new password",
+      "confirmPassword": "Confirm password",
+      "confirmPasswordPlaceholder": "Confirm new password",
+      "submit": "Reset password",
+      "success": "Password reset successfully",
+      "error": "Failed to reset password"
+    },
+    "logout": "Logout"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "minLength": "Must be at least {{min}} characters",
+    "maxLength": "Must be at most {{max}} characters",
+    "passwordMatch": "Passwords do not match",
+    "passwordStrength": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "select": "Select language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {{name}}!"
+  },
+  "home": {
+    "hero": {
+      "title": "Production-Ready SaaS Starter",
+      "subtitle": "A complete frontend architecture with authentication, theming, and internationalization. Built with React, TypeScript, and modern best practices.",
+      "getStarted": "Get Started",
+      "signIn": "Sign In"
+    },
+    "features": {
+      "title": "Everything You Need",
+      "subtitle": "A scalable, feature-based architecture ready for production deployment.",
+      "auth": {
+        "title": "Authentication",
+        "description": "Complete auth flow with login, register, password reset, and Zod validation."
+      },
+      "darkMode": {
+        "title": "Dark Mode",
+        "description": "System-aware theme switching with light, dark, and system modes."
+      },
+      "i18n": {
+        "title": "Internationalization",
+        "description": "Multi-language support with i18next. Currently supports English and Spanish."
+      },
+      "stack": {
+        "title": "Modern Stack",
+        "description": "Built with React, TypeScript, Zustand, and TanStack Query."
+      }
+    },
+    "architecture": {
+      "title": "Feature-Based Architecture",
+      "subtitle": "Organized by features for maximum scalability and maintainability. Each feature contains its own pages, components, hooks, services, store, types, and schemas.",
+      "zustand": "Zustand for global state management",
+      "tanstack": "TanStack Query for server state",
+      "zod": "Zod schemas for validation",
+      "i18next": "i18next for translations",
+      "typescript": "Strict TypeScript typing"
+    },
+    "footer": "Built with Vite, React, TypeScript, TailwindCSS, Zustand, and TanStack Query."
+  }
+}

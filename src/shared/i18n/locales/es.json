@@ -1,0 +1,134 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrio un error",
+    "success": "Exito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver",
+    "backToHome": "Volver al inicio",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "or": "o"
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de nuevo",
+      "subtitle": "Ingresa tus credenciales para acceder a tu cuenta",
+      "email": "Correo electronico",
+      "emailPlaceholder": "Ingresa tu correo",
+      "password": "Contrasena",
+      "passwordPlaceholder": "Ingresa tu contrasena",
+      "rememberMe": "Recordarme",
+      "forgotPassword": "Olvidaste tu contrasena?",
+      "submit": "Iniciar sesion",
+      "noAccount": "No tienes una cuenta?",
+      "signUp": "Registrate",
+      "success": "Sesion iniciada exitosamente",
+      "error": "Correo o contrasena invalidos"
+    },
+    "register": {
+      "title": "Crear una cuenta",
+      "subtitle": "Ingresa tus datos para comenzar",
+      "name": "Nombre completo",
+      "namePlaceholder": "Ingresa tu nombre completo",
+      "email": "Correo electronico",
+      "emailPlaceholder": "Ingresa tu correo",
+      "password": "Contrasena",
+      "passwordPlaceholder": "Crea una contrasena",
+      "confirmPassword": "Confirmar contrasena",
+      "confirmPasswordPlaceholder": "Confirma tu contrasena",
+      "terms": "Acepto los Terminos de Servicio y la Politica de Privacidad",
+      "submit": "Crear cuenta",
+      "hasAccount": "Ya tienes una cuenta?",
+      "signIn": "Iniciar sesion",
+      "success": "Cuenta creada exitosamente",
+      "error": "Error al crear la cuenta"
+    },
+    "forgotPassword": {
+      "title": "Olvidaste tu contrasena?",
+      "subtitle": "Ingresa tu correo y te enviaremos un enlace para restablecerla",
+      "email": "Correo electronico",
+      "emailPlaceholder": "Ingresa tu correo",
+      "submit": "Enviar enlace",
+      "backToLogin": "Volver al inicio de sesion",
+      "success": "Enlace enviado a tu correo",
+      "error": "Correo no encontrado"
+    },
+    "resetPassword": {
+      "title": "Restablecer contrasena",
+      "subtitle": "Ingresa tu nueva contrasena",
+      "password": "Nueva contrasena",
+      "passwordPlaceholder": "Ingresa nueva contrasena",
+      "confirmPassword": "Confirmar contrasena",
+      "confirmPasswordPlaceholder": "Confirma nueva contrasena",
+      "submit": "Restablecer contrasena",
+      "success": "Contrasena restablecida exitosamente",
+      "error": "Error al restablecer la contrasena"
+    },
+    "logout": "Cerrar sesion"
+  },
+  "validation": {
+    "required": "Este campo es requerido",
+    "email": "Por favor ingresa un correo valido",
+    "minLength": "Debe tener al menos {{min}} caracteres",
+    "maxLength": "Debe tener como maximo {{max}} caracteres",
+    "passwordMatch": "Las contrasenas no coinciden",
+    "passwordStrength": "La contrasena debe contener al menos una mayuscula, una minuscula, un numero y un caracter especial"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "select": "Seleccionar idioma",
+    "en": "Ingles",
+    "es": "Espanol"
+  },
+  "dashboard": {
+    "title": "Panel de control",
+    "welcome": "Bienvenido de nuevo, {{name}}!"
+  },
+  "home": {
+    "hero": {
+      "title": "Plantilla SaaS Lista para Produccion",
+      "subtitle": "Una arquitectura frontend completa con autenticacion, temas e internacionalizacion. Construida con React, TypeScript y mejores practicas modernas.",
+      "getStarted": "Comenzar",
+      "signIn": "Iniciar Sesion"
+    },
+    "features": {
+      "title": "Todo lo que Necesitas",
+      "subtitle": "Una arquitectura escalable basada en features lista para produccion.",
+      "auth": {
+        "title": "Autenticacion",
+        "description": "Flujo completo de auth con login, registro, recuperacion de contrasena y validacion Zod."
+      },
+      "darkMode": {
+        "title": "Modo Oscuro",
+        "description": "Cambio de tema con deteccion del sistema, modos claro, oscuro y automatico."
+      },
+      "i18n": {
+        "title": "Internacionalizacion",
+        "description": "Soporte multi-idioma con i18next. Actualmente soporta Ingles y Espanol."
+      },
+      "stack": {
+        "title": "Stack Moderno",
+        "description": "Construido con React, TypeScript, Zustand y TanStack Query."
+      }
+    },
+    "architecture": {
+      "title": "Arquitectura Basada en Features",
+      "subtitle": "Organizado por features para maxima escalabilidad y mantenibilidad. Cada feature contiene sus propias paginas, componentes, hooks, servicios, store, tipos y esquemas.",
+      "zustand": "Zustand para gestion de estado global",
+      "tanstack": "TanStack Query para estado del servidor",
+      "zod": "Esquemas Zod para validacion",
+      "i18next": "i18next para traducciones",
+      "typescript": "Tipado estricto con TypeScript"
+    },
+    "footer": "Construido con Vite, React, TypeScript, TailwindCSS, Zustand y TanStack Query."
+  }
+}
