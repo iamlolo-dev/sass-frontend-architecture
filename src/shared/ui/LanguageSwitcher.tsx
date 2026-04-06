@@ -9,7 +9,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/shared/ui/dropdown-menu';
-import { useTranslation, supportedLanguages, type SupportedLanguage } from '@/shared/i18n';
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation';
+import { supportedLanguages, type SupportedLanguage } from '@/shared/i18n/i18n';
 
 const languageLabels: Record<SupportedLanguage, string> = {
   en: 'English',

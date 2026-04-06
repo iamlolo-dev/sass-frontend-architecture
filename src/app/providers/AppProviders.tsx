@@ -1,6 +1,6 @@
 import { QueryProvider } from './QueryProvider'
-import { ThemeProvider } from '@/shared/theme'
-import { I18nProvider } from '@/shared/i18n'
+import { ThemeProvider } from '@/shared/theme/ThemeProvider'
+import { I18nProvider } from '@/shared/i18n/I18nProvider'
 
 interface AppProvidersProps {
   children: React.ReactNode

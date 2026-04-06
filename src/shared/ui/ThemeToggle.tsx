@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Monitor } from 'lucide-react';
 import { Button } from '@/shared/ui/button';
@@ -9,9 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/shared/ui/dropdown-menu';
-import { useThemeStore } from '@/shared/theme';
-import { useTranslation } from '@/shared/i18n';
-import type { Theme } from '@/shared/theme';
+import { useThemeStore } from '@/shared/theme/theme.store';
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation';
+import type { Theme } from '@/shared/theme/theme.types';
 
 export function ThemeToggle() {
   const { t } = useTranslation();

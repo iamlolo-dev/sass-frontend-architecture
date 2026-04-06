@@ -1,7 +1,7 @@
 
 import type { ToasterProps } from 'sonner'
 import React from 'react'
-import { useThemeStore } from '@/shared/theme'
+import { useThemeStore } from '@/shared/theme/theme.store'
 import { Toaster as Sonner } from 'sonner'
 
 const Toaster = ({ ...props }: ToasterProps) => {

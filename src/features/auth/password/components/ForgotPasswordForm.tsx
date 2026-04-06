@@ -14,9 +14,10 @@ import {
   FormLabel,
   FormMessage,
 } from '@/shared/ui/form';
-import { useTranslation } from '@/shared/i18n';
-import { useForgotPassword, useAuthStore } from '../hooks';
-import { forgotPasswordSchema, type ForgotPasswordFormData } from '../schemas';
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation';
+import { useForgotPassword } from '@/features/auth/password/hooks/useForgotPassword';
+import { useAuthStore } from '@/features/auth/store/useAuthStore';
+import { forgotPasswordSchema, type ForgotPasswordFormData } from '@/features/auth/password/schema/forgotPassword.schema';
 
 export function ForgotPasswordForm() {
   const { t } = useTranslation();

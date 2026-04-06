@@ -14,9 +14,10 @@ import {
   FormLabel,
   FormMessage,
 } from '@/shared/ui/form'
-import { useTranslation } from '@/shared/i18n'
-import { useLogin, useAuthStore } from '@/features/auth'
-import { loginSchema, type LoginFormData } from '@/features/auth'
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation'
+import { useAuthStore } from '@/features/auth/store/useAuthStore'
+import { useLogin } from '@/features/auth/login/hooks/useLogin'
+import { loginSchema, type LoginFormData } from '@/features/auth/login/schema/login.schema'
 
 export function LoginForm() {
   const { t } = useTranslation()

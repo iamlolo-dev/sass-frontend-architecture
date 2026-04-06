@@ -5,7 +5,6 @@ import { Loader2 } from 'lucide-react';
 
 import { Button } from '@/shared/ui/button';
 import { Input } from '@/shared/ui/input';
-import { Checkbox } from '@/shared/ui/checkbox';
 import {
   Form,
   FormControl,
@@ -14,9 +13,10 @@ import {
   FormLabel,
   FormMessage,
 } from '@/shared/ui/form';
-import { useTranslation } from '@/shared/i18n';
-import { useRegister, useAuthStore } from '../hooks';
-import { registerSchema, type RegisterFormData } from '../schemas';
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation';
+import { useRegister } from '@/features/auth/register/hooks/useRegister';
+import { useAuthStore } from '@/features/auth/store/useAuthStore';
+import { registerSchema, type RegisterFormData } from '@/features/auth/register/schema/register.schema';
 
 export function RegisterForm() {
   const { t } = useTranslation();
@@ -30,7 +30,6 @@ export function RegisterForm() {
       email: '',
       password: '',
       confirmPassword: '',
-      acceptTerms: false,
     },
   });
 
@@ -139,30 +138,6 @@ export function RegisterForm() {
                   {form.formState.errors.confirmPassword?.message &&
                     t(form.formState.errors.confirmPassword.message)}
                 </FormMessage>
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name="acceptTerms"
-            render={({ field }) => (
-              <FormItem className="flex flex-row items-start gap-3">
-                <FormControl>
-                  <Checkbox
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                  />
-                </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormLabel className="text-sm font-normal text-muted-foreground cursor-pointer">
-                    {t('auth.register.terms')}
-                  </FormLabel>
-                  <FormMessage>
-                    {form.formState.errors.acceptTerms?.message &&
-                      t(form.formState.errors.acceptTerms.message)}
-                  </FormMessage>
-                </div>
               </FormItem>
             )}
           />

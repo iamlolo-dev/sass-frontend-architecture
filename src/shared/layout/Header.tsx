@@ -11,8 +11,9 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/shared/ui/avatar'
 import { ThemeToggle } from '@/shared/ui/ThemeToggle'
 import { LanguageSwitcher } from '@/shared/ui/LanguageSwitcher'
-import { useAuthStore, useLogout } from '@/features/auth'
-import { useTranslation } from '@/shared/i18n'
+import { useAuthStore } from '@/features/auth/store/useAuthStore'
+import { useLogout } from '@/features/auth/hooks/useLogout'
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation'
 
 export function Header() {
   const { t } = useTranslation()
@@ -44,7 +45,7 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="relative h-9 w-9 rounded-full">
                   <Avatar className="h-9 w-9">
-                    <AvatarImage src={user.avatar} alt={user.name} />
+                    <AvatarImage src={user.avatar || ''} alt={user.name} />
                     <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
                   </Avatar>
                 </Button>
@@ -52,7 +53,7 @@ export function Header() {
               <DropdownMenuContent align="end" className="w-56">
                 <div className="flex items-center gap-2 p-2">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src={user.avatar} alt={user.name} />
+                    <AvatarImage src={user.avatar || ''} alt={user.name} />
                     <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col">

@@ -14,9 +14,10 @@ import {
   FormLabel,
   FormMessage,
 } from '@/shared/ui/form';
-import { useTranslation } from '@/shared/i18n';
-import { useResetPassword, useAuthStore } from '../hooks';
-import { resetPasswordSchema, type ResetPasswordFormData } from '../schemas';
+import { useTranslation } from '@/shared/i18n/hooks/useTranslation';
+import { useResetPassword } from '@/features/auth/reset/hooks/useResetPassword';
+import { useAuthStore } from '@/features/auth/store/useAuthStore';
+import { resetPasswordSchema, type ResetPasswordFormData } from '@/features/auth/reset/schema/resetPassword.schema';
 
 export function ResetPasswordForm() {
   const { t } = useTranslation();
